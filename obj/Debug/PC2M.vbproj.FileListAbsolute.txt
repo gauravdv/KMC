@@ -69,7 +69,6 @@ D:\Gaurav\Project\PC2M 11-10-2017\bin\Debug\PC2M.exe
 D:\Gaurav\Project\PC2M 11-10-2017\bin\Debug\PC2M.pdb
 D:\Gaurav\Project\PC2M 11-10-2017\bin\Debug\PC2M.xml
 D:\Gaurav\Project\PC2M 11-10-2017\bin\Debug\MySql.Data.dll
-D:\Gaurav\Project\PC2M 11-10-2017\obj\Debug\PC2M.vbprojAssemblyReference.cache
 D:\Gaurav\Project\PC2M 11-10-2017\obj\Debug\PC2M.frmMenu.resources
 D:\Gaurav\Project\PC2M 11-10-2017\obj\Debug\PC2M.frm_Auditing.resources
 D:\Gaurav\Project\PC2M 11-10-2017\obj\Debug\PC2M.Resources.resources
@@ -81,18 +80,3 @@ D:\Gaurav\Project\PC2M 11-10-2017\obj\Debug\PC2M.xml
 D:\Gaurav\Project\PC2M 11-10-2017\obj\Debug\PC2M.pdb
 D:\Gaurav\Project\PC2M 11-10-2017\obj\Debug\PC2M.frm_CollectCash.resources
 D:\Gaurav\Project\PC2M 11-10-2017\obj\Debug\PC2M.frm_Master.resources
-C:\_Github\KMC\bin\Debug\PC2M.exe
-C:\_Github\KMC\bin\Debug\PC2M.pdb
-C:\_Github\KMC\bin\Debug\PC2M.xml
-C:\_Github\KMC\obj\Debug\PC2M.vbprojResolveAssemblyReference.cache
-C:\_Github\KMC\obj\Debug\PC2M.frmMenu.resources
-C:\_Github\KMC\obj\Debug\PC2M.frm_Auditing.resources
-C:\_Github\KMC\obj\Debug\PC2M.frm_CollectCash.resources
-C:\_Github\KMC\obj\Debug\PC2M.frm_Master.resources
-C:\_Github\KMC\obj\Debug\PC2M.Resources.resources
-C:\_Github\KMC\obj\Debug\PC2M.vbproj.GenerateResource.cache
-C:\_Github\KMC\obj\Debug\PC2M.vbproj.CoreCompileInputs.cache
-C:\_Github\KMC\obj\Debug\PC2M.vbproj.CopyComplete
-C:\_Github\KMC\obj\Debug\PC2M.exe
-C:\_Github\KMC\obj\Debug\PC2M.xml
-C:\_Github\KMC\obj\Debug\PC2M.pdb

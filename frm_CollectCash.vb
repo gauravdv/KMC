@@ -1,4 +1,5 @@
-﻿Imports MySql.Data.MySqlClient
+﻿Imports System.IO
+Imports MySql.Data.MySqlClient
 
 Public Class frm_CollectCash
     Dim conn As New MySqlConnection
@@ -20,6 +21,11 @@ Public Class frm_CollectCash
     Dim A2 As String
     Dim A1 As String
 
+
+    Dim db_Server As String
+    Dim db_Name As String
+    Dim db_UserID As String
+    Dim db_Password As String
 
     'Calculate Total Amount
     Private Sub AmountSum()
@@ -403,21 +409,49 @@ Public Class frm_CollectCash
     End Sub
 
     'For Database Connection
-    Public Sub DBconnect()
-        Dim DatabaseName As String = "db_vvmt_ticketing"
-        Dim server As String = "192.168.1.253"
-        Dim userName As String = "root"
-        Dim password As String = "mysql@123"
-        Dim test As String = ""
-        If Not conn Is Nothing Then conn.Close()
-        conn.ConnectionString = String.Format("server={0}; user id={1}; password={2}; database={3}; pooling=false", server, userName, password, DatabaseName)
+    Private Sub db_connection()
+        Get_DataBaseDetail()
+        Dim myCSB As MySqlConnectionStringBuilder = New MySqlConnectionStringBuilder()
+        myCSB.Server = db_Server
+        myCSB.Database = db_Name
+        myCSB.UserID = db_UserID
+        myCSB.Password = db_Password
+        conn = New MySqlConnection(myCSB.ConnectionString)
+        ' conn.ConnectionString = String.Format("server={0}; user id={1}; password={2}; database={3}; pooling=false", db_Server, db_Name, db_UserID, db_Password)
         Try
             conn.Open()
-            'MsgBox("Connected")
+            ' MsgBox("Connected")
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
         conn.Close()
+    End Sub
+
+    Private Sub Get_DataBaseDetail()
+        Dim txtFileName As String = "KnownFile.txt"
+        Dim ExeLoaction As String = System.Reflection.Assembly.GetEntryAssembly().Location
+        Dim txtFilePath As String = Path.GetDirectoryName(ExeLoaction)
+        Dim txtpath As String = txtFilePath & "\" & txtFileName
+
+        Try
+            If File.Exists(txtpath) Then
+
+                Using sr As StreamReader = New StreamReader(txtpath)
+
+                    While sr.Peek() >= 0
+                        Dim ss As String = sr.ReadLine()
+                        Dim txtsplit As String() = ss.Split(";"c)
+                        db_Server = txtsplit(0)
+                        db_Name = txtsplit(1)
+                        db_UserID = txtsplit(2)
+                        db_Password = txtsplit(3)
+                    End While
+                End Using
+            End If
+
+        Catch e As Exception
+            Console.WriteLine("Error: {0}", e.ToString())
+        End Try
     End Sub
 
     ' Load Form 
@@ -427,7 +461,7 @@ Public Class frm_CollectCash
             txt_TotalCollection.Text = Convert.ToInt32(TotalCollection)
         End If
         txt_CollectionDate.Text = System.DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss")
-        DBconnect()
+        db_connection()
     End Sub
 
     Private Sub btn_UploadCollection_Click(sender As Object, e As EventArgs) Handles btn_UploadCollection.Click

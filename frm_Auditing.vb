@@ -29,14 +29,17 @@ Public Class frm_Auditing
     Dim cardTopUp As Integer = 78
     Dim endOfString As Integer = 4
 
-
+    Dim db_Server As String
+    Dim db_Name As String
+    Dim db_UserID As String
+    Dim db_Password As String
     'Load frm_Auditing
     Private Sub frm_Auditing_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         System.Windows.Forms.Control.CheckForIllegalCrossThreadCalls = False
         For Each sp As String In My.Computer.Ports.SerialPortNames
             cmbPortList.Items.Add(sp)
         Next
-        DBconnect()
+        db_connection()
         ' btn_UploadTicket.Enabled = False
         btn_CollectCardData.Enabled = False
         btn_UploadCardData.Enabled = False
@@ -46,28 +49,74 @@ Public Class frm_Auditing
     End Sub
 
     'For Database Connection
-    Public Sub DBconnect()
-        'Test Data Base ----------------------------------------------------
-        Dim DatabaseName As String = "db_vvmt_ticketing"
-        Dim server As String = "192.168.1.253"
-        Dim userName As String = "root"
-        Dim password As String = "mysql@123"
-        ''KMT----------------------------------------------------------------
-        'Dim DatabaseName As String = "db_vvmt_ticketing"
-        'Dim server As String = "192.168.0.251"
-        'Dim userName As String = "root"
-        'Dim password As String = "p@ssw0rd"
+    'Public Sub DBconnect()
+    '    'Test Data Base ----------------------------------------------------
+    '    Dim DatabaseName As String = "db_vvmt_ticketing"
+    '    Dim server As String = "192.168.1.253"
+    '    Dim userName As String = "root"
+    '    Dim password As String = "mysql@123"
+    '    ''KMT----------------------------------------------------------------
+    '    'Dim DatabaseName As String = "db_vvmt_ticketing"
+    '    'Dim server As String = "192.168.0.251"
+    '    'Dim userName As String = "root"
+    '    'Dim password As String = "p@ssw0rd"
 
-        Dim test As String = ""
-        If Not conn Is Nothing Then conn.Close()
-        conn.ConnectionString = String.Format("server={0}; user id={1}; password={2}; database={3}; pooling=false", server, userName, password, DatabaseName)
+    '    Dim test As String = ""
+    '    If Not conn Is Nothing Then conn.Close()
+    '    conn.ConnectionString = String.Format("server={0}; user id={1}; password={2}; database={3}; pooling=false", server, userName, password, DatabaseName)
+    '    Try
+    '        conn.Open()
+    '        'MsgBox("Connected")
+    '    Catch ex As Exception
+    '        MsgBox(ex.Message)
+    '    End Try
+    '    conn.Close()
+    'End Sub
+
+    'For Database Connection
+    Private Sub db_connection()
+        Get_DataBaseDetail()
+        Dim myCSB As MySqlConnectionStringBuilder = New MySqlConnectionStringBuilder()
+        myCSB.Server = db_Server
+        myCSB.Database = db_Name
+        myCSB.UserID = db_UserID
+        myCSB.Password = db_Password
+        conn = New MySqlConnection(myCSB.ConnectionString)
+        'conn.ConnectionString = String.Format("server={0}; user id={1}; password={2}; database={3}; pooling=false", db_Server, db_Name, db_UserID, db_Password)
         Try
             conn.Open()
             'MsgBox("Connected")
         Catch ex As Exception
-            MsgBox(ex.Message)
+            MsgBox("Mysql Not Connected" + ex.Message)
         End Try
         conn.Close()
+    End Sub
+
+    Private Sub Get_DataBaseDetail()
+        Dim txtFileName As String = "KnownFile.txt"
+        Dim ExeLoaction As String = System.Reflection.Assembly.GetEntryAssembly().Location
+        Dim txtFilePath As String = Path.GetDirectoryName(ExeLoaction)
+        Dim txtpath As String = txtFilePath & "\" & txtFileName
+
+        Try
+            If File.Exists(txtpath) Then
+
+                Using sr As StreamReader = New StreamReader(txtpath)
+
+                    While sr.Peek() >= 0
+                        Dim ss As String = sr.ReadLine()
+                        Dim txtsplit As String() = ss.Split(";"c)
+                        db_Server = txtsplit(0)
+                        db_Name = txtsplit(1)
+                        db_UserID = txtsplit(2)
+                        db_Password = txtsplit(3)
+                    End While
+                End Using
+            End If
+
+        Catch e As Exception
+            Console.WriteLine("Error: {0}", e.ToString())
+        End Try
     End Sub
 
     'Download Ticket & Display
@@ -233,7 +282,7 @@ Public Class frm_Auditing
                         _flddt_last_upd_date = System.DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss")
                         If Not ((FullTicketData1.Equals("")) AndAlso (FullTicketData1.Length > 1)) Then
                             i = (i + 1)
-                            If (i = 100) Then
+                            If (i = 10000) Then
                                 Try
                                     Sql = "INSERT INTO tbl_waybill_ticket_handheld_data_dummy (fldv_waybill_no,fldv_conductor_name,fldv_driver_name,fldv_vehicle_number,
                                                        fldv_division_name,fldv_division_code,fldv_depot_name,fldv_depot_code,fldv_schedule,fldv_etm_number,fldv_waybill_date_time,
@@ -243,8 +292,8 @@ Public Class frm_Auditing
 
                                     conn.Open()
                                     dbcomm = New MySqlCommand(Sql, conn)
-                                    dbcomm.Parameters.AddWithValue("@fldv_conductor_name", _fldv_conductor_name)
-                                    dbcomm.Parameters.AddWithValue("@fldv_driver_name", _fldv_driver_name)
+                                    dbcomm.Parameters.AddWithValue("@fldv_conductor_name", _fldv_conductor_employee_code)
+                                    dbcomm.Parameters.AddWithValue("@fldv_driver_name", _fldv_driver_employee_code)
                                     dbcomm.Parameters.AddWithValue("@fldv_vehicle_number", _fldv_vehicle_number)
                                     dbcomm.Parameters.AddWithValue("@fldv_division_name", _fldv_division_name)
                                     dbcomm.Parameters.AddWithValue("@fldv_division_code", _fldv_division_code)
@@ -266,7 +315,7 @@ Public Class frm_Auditing
                                 End Try
                             End If
 
-                            If (i < 100) Then
+                            If (i < 10000) Then
                                 Try
                                     Sql = "INSERT INTO tbl_waybill_ticket_handheld_data_dummy (fldv_waybill_no,fldv_conductor_name,fldv_driver_name,fldv_vehicle_number,
                                                        fldv_division_name,fldv_division_code,fldv_depot_name,fldv_depot_code,fldv_schedule,fldv_etm_number,fldv_waybill_date_time,
@@ -277,8 +326,8 @@ Public Class frm_Auditing
                                     conn.Open()
                                     dbcomm = New MySqlCommand(Sql, conn)
                                     dbcomm.Parameters.AddWithValue("@fldv_waybill_no", _fldv_waybill_no)
-                                    dbcomm.Parameters.AddWithValue("@fldv_conductor_name", _fldv_conductor_name)
-                                    dbcomm.Parameters.AddWithValue("@fldv_driver_name", _fldv_driver_name)
+                                    dbcomm.Parameters.AddWithValue("@fldv_conductor_name", _fldv_conductor_employee_code)
+                                    dbcomm.Parameters.AddWithValue("@fldv_driver_name", _fldv_driver_employee_code)
                                     dbcomm.Parameters.AddWithValue("@fldv_vehicle_number", _fldv_vehicle_number)
                                     dbcomm.Parameters.AddWithValue("@fldv_division_name", _fldv_division_name)
                                     dbcomm.Parameters.AddWithValue("@fldv_division_code", _fldv_division_code)
@@ -406,9 +455,9 @@ Public Class frm_Auditing
                     Else
                         If Not str3 = "CARD" Then
                             If machineType = "BALAJI" Then
-                                CalPaisa = (CalPaisa + Convert.ToInt16(Mid(TicketLine, 45, 7)))
+                                CalPaisa = (CalPaisa + Convert.ToInt64(Mid(TicketLine, 45, 7)))
                             Else
-                                CalPaisa = (CalPaisa + Convert.ToInt16(Mid(TicketLine, 37, 7)))
+                                CalPaisa = (CalPaisa + Convert.ToInt64(Mid(TicketLine, 37, 7)))
                             End If
                         End If
                     End If
