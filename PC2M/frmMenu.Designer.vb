@@ -22,13 +22,17 @@ Partial Class frmMenu
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.CMBPORTNO = New System.Windows.Forms.ComboBox()
         Me.btnExit = New System.Windows.Forms.Button()
         Me.BtnErase = New System.Windows.Forms.Button()
         Me.btnDownLoad = New System.Windows.Forms.Button()
         Me.btnSendFile = New System.Windows.Forms.Button()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.IoPort = New System.IO.Ports.SerialPort(Me.components)
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+        Me.IOPORT_DW = New System.IO.Ports.SerialPort(Me.components)
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtProcStat = New System.Windows.Forms.TextBox()
@@ -104,15 +108,31 @@ Partial Class frmMenu
         Me.btnSendFile.Text = "Send File"
         Me.btnSendFile.UseVisualStyleBackColor = False
         '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(331, 68)
+        Me.TextBox2.Multiline = True
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(233, 296)
+        Me.TextBox2.TabIndex = 5
+        Me.TextBox2.Visible = False
+        '
+        'IoPort
+        '
+        '
+        'OpenFileDialog1
+        '
+        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
+        '
         'Label2
         '
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(1, 37)
+        Me.Label2.Location = New System.Drawing.Point(12, 37)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(358, 28)
+        Me.Label2.Size = New System.Drawing.Size(360, 28)
         Me.Label2.TabIndex = 7
-        Me.Label2.Text = "Version 2.0 Rel. Oct. 2017"
+        Me.Label2.Text = "Version 2.03.15 "
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label1
@@ -141,11 +161,12 @@ Partial Class frmMenu
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(348, 408)
+        Me.ClientSize = New System.Drawing.Size(323, 446)
         Me.Controls.Add(Me.txtProcStat)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.TextBox2)
         Me.Name = "frmMenu"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "PC2M"
@@ -159,8 +180,11 @@ Partial Class frmMenu
     Friend WithEvents BtnErase As System.Windows.Forms.Button
     Friend WithEvents btnDownLoad As System.Windows.Forms.Button
     Friend WithEvents btnSendFile As System.Windows.Forms.Button
+    Friend WithEvents IoPort As System.IO.Ports.SerialPort
     Friend WithEvents CMBPORTNO As System.Windows.Forms.ComboBox
     Friend WithEvents OpenFileDialog1 As System.Windows.Forms.OpenFileDialog
+    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents IOPORT_DW As System.IO.Ports.SerialPort
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents txtProcStat As System.Windows.Forms.TextBox
