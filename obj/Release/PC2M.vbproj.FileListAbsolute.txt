@@ -32,3 +32,27 @@ E:\sam\balaji\powercraft\dotnet\PC2M - General\PC2M\obj\Release\PC2M.vbproj.Gene
 E:\sam\balaji\powercraft\dotnet\PC2M - General\PC2M\bin\Debug\64BIT\PC2M.exe
 E:\sam\balaji\powercraft\dotnet\PC2M - General\PC2M\bin\Debug\64BIT\PC2M.pdb
 E:\sam\balaji\powercraft\dotnet\PC2M - General\PC2M\bin\Debug\64BIT\PC2M.xml
+E:\sam\balaji\powercraft\dotnet\PC2M -  DLL\PC2M\bin\Debug\PC2M.exe
+E:\sam\balaji\powercraft\dotnet\PC2M -  DLL\PC2M\bin\Debug\PC2M.pdb
+E:\sam\balaji\powercraft\dotnet\PC2M -  DLL\PC2M\bin\Debug\PC2M.xml
+E:\sam\balaji\powercraft\dotnet\PC2M -  DLL\PC2M\bin\Debug\PC2M_DLL.dll
+E:\sam\balaji\powercraft\dotnet\PC2M -  DLL\PC2M\bin\Debug\PC2M_DLL.pdb
+E:\sam\balaji\powercraft\dotnet\PC2M -  DLL\PC2M\bin\Debug\PC2M_DLL.xml
+E:\sam\balaji\powercraft\dotnet\PC2M -  DLL\PC2M\obj\Release\ResolveAssemblyReference.cache
+E:\sam\balaji\powercraft\dotnet\PC2M -  DLL\PC2M\obj\Release\PC2M.frmMenu.resources
+E:\sam\balaji\powercraft\dotnet\PC2M -  DLL\PC2M\obj\Release\PC2M.Resources.resources
+E:\sam\balaji\powercraft\dotnet\PC2M -  DLL\PC2M\obj\Release\PC2M.vbproj.GenerateResource.Cache
+E:\sam\balaji\powercraft\dotnet\PC2M -  DLL\PC2M\obj\Release\PC2M.exe
+E:\sam\balaji\powercraft\dotnet\PC2M -  DLL\PC2M\obj\Release\PC2M.xml
+E:\sam\balaji\powercraft\dotnet\PC2M -  DLL\PC2M\obj\Release\PC2M.pdb
+F:\DOT NET SOURCE\PC2M 11-10-2017\obj\Release\PC2M.exe
+F:\DOT NET SOURCE\PC2M 11-10-2017\obj\Release\PC2M.xml
+F:\DOT NET SOURCE\PC2M 11-10-2017\obj\Release\PC2M.pdb
+F:\DOT NET SOURCE\PC2M 11-10-2017\bin\Debug\PC2M.exe
+F:\DOT NET SOURCE\PC2M 11-10-2017\bin\Debug\PC2M.pdb
+F:\DOT NET SOURCE\PC2M 11-10-2017\bin\Debug\PC2M.xml
+F:\DOT NET SOURCE\PC2M 11-10-2017\bin\Debug\PC2M_DLL.pdb
+F:\DOT NET SOURCE\PC2M 11-10-2017\bin\Debug\PC2M_DLL.xml
+F:\DOT NET SOURCE\PC2M 11-10-2017\obj\Release\PC2M.frmMenu.resources
+F:\DOT NET SOURCE\PC2M 11-10-2017\obj\Release\PC2M.Resources.resources
+F:\DOT NET SOURCE\PC2M 11-10-2017\obj\Release\PC2M.vbproj.GenerateResource.Cache

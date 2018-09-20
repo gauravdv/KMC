@@ -20,9 +20,8 @@
     <ApplicationIcon>balaji.ico</ApplicationIcon>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
-    <UpgradeBackupLocation>
-    </UpgradeBackupLocation>
     <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -39,12 +38,20 @@
     <DefineDebug>false</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Debug\32BIT\</OutputPath>
+    <OutputPath>bin\Debug\</OutputPath>
     <DocumentationFile>PC2M.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
     <PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.1.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Users\konsultera\Desktop\MySql.Data.DLL</HintPath>
+    </Reference>
+    <Reference Include="PC2M_DLL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll\PC2M - General\PC2M\bin\Debug\PC2M_DLL.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -64,16 +71,28 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationEvents.vb" />
-    <Compile Include="frmdownload.Designer.vb">
-      <DependentUpon>frmdownload.vb</DependentUpon>
-    </Compile>
-    <Compile Include="frmdownload.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="frmMenu.Designer.vb">
       <DependentUpon>frmMenu.vb</DependentUpon>
     </Compile>
     <Compile Include="frmMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Auditing.Designer.vb">
+      <DependentUpon>frm_Auditing.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Auditing.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_CollectCash.Designer.vb">
+      <DependentUpon>frm_CollectCash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_CollectCash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Master.Designer.vb">
+      <DependentUpon>frm_Master.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Master.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -93,13 +112,18 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="frmdownload.resx">
-      <DependentUpon>frmdownload.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmMenu.resx">
       <DependentUpon>frmMenu.vb</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Auditing.resx">
+      <DependentUpon>frm_Auditing.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_CollectCash.resx">
+      <DependentUpon>frm_CollectCash.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Master.resx">
+      <DependentUpon>frm_Master.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

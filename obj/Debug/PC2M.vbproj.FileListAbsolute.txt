@@ -16,33 +16,83 @@ E:\sam\balaji\powercraft\dotnet\PC2M - General\PC2M\obj\Debug\ResolveAssemblyRef
 E:\sam\balaji\powercraft\dotnet\PC2M - General\PC2M\obj\Debug\PC2M.frmDownload.resources
 E:\sam\balaji\powercraft\dotnet\PC2M - General\PC2M\obj\Debug\PC2M.frmMenu.resources
 E:\sam\balaji\powercraft\dotnet\PC2M - General\PC2M\obj\Debug\PC2M.Resources.resources
+E:\sam\balaji\powercraft\dotnet\PC2M - General\PC2M\obj\Debug\PC2M.vbproj.GenerateResource.Cache
 E:\sam\balaji\powercraft\dotnet\PC2M - General\PC2M\obj\Debug\PC2M.exe
 E:\sam\balaji\powercraft\dotnet\PC2M - General\PC2M\obj\Debug\PC2M.xml
 E:\sam\balaji\powercraft\dotnet\PC2M - General\PC2M\obj\Debug\PC2M.pdb
-E:\sam\balaji\powercraft\dotnet\PC2M - General\PC2M\obj\Debug\GenerateResource-ResGen.read.1.tlog
-E:\sam\balaji\powercraft\dotnet\PC2M - General\PC2M\obj\Debug\GenerateResource-ResGen.write.1.tlog
-D:\SAM_30032017\balaji\powercraft\dotnet\PC2M - General\PC2M\obj\Debug\PC2M.exe
-D:\SAM_30032017\balaji\powercraft\dotnet\PC2M - General\PC2M\obj\Debug\PC2M.xml
-D:\SAM_30032017\balaji\powercraft\dotnet\PC2M - General\PC2M\obj\Debug\PC2M.pdb
-F:\DOT NET SOURCE\FROM JAKATE\sameer_jakate\dotnet\PC2M - General\PC2M\obj\Debug\PC2M.exe
-F:\DOT NET SOURCE\FROM JAKATE\sameer_jakate\dotnet\PC2M - General\PC2M\obj\Debug\PC2M.xml
-F:\DOT NET SOURCE\FROM JAKATE\sameer_jakate\dotnet\PC2M - General\PC2M\obj\Debug\PC2M.pdb
-F:\DOT NET SOURCE\FROM JAKATE\sameer_jakate\dotnet\PC2M - General\PC2M\bin\Debug\PC2M.exe
-F:\DOT NET SOURCE\FROM JAKATE\sameer_jakate\dotnet\PC2M - General\PC2M\bin\Debug\PC2M.pdb
-F:\DOT NET SOURCE\FROM JAKATE\sameer_jakate\dotnet\PC2M - General\PC2M\bin\Debug\PC2M.xml
-F:\DOT NET SOURCE\FROM JAKATE\sameer_jakate\dotnet\PC2M - General\PC2M\obj\Debug\PC2M.frmDownload.resources
-F:\DOT NET SOURCE\FROM JAKATE\sameer_jakate\dotnet\PC2M - General\PC2M\obj\Debug\PC2M.frmMenu.resources
-F:\DOT NET SOURCE\FROM JAKATE\sameer_jakate\dotnet\PC2M - General\PC2M\obj\Debug\PC2M.Resources.resources
-F:\DOT NET SOURCE\FROM JAKATE\sameer_jakate\dotnet\PC2M - General\PC2M\obj\Debug\PC2M.vbproj.GenerateResource.Cache
-C:\Users\konsultera\Desktop\vvmc_dll\PC2M - General\PC2M\bin\Debug\PC2M.exe
-C:\Users\konsultera\Desktop\vvmc_dll\PC2M - General\PC2M\bin\Debug\PC2M.pdb
-C:\Users\konsultera\Desktop\vvmc_dll\PC2M - General\PC2M\bin\Debug\PC2M.xml
-C:\Users\konsultera\Desktop\vvmc_dll\PC2M - General\PC2M\obj\Debug\PC2M.vbprojResolveAssemblyReference.cache
-C:\Users\konsultera\Desktop\vvmc_dll\PC2M - General\PC2M\obj\Debug\PC2M.frmDownload.resources
-C:\Users\konsultera\Desktop\vvmc_dll\PC2M - General\PC2M\obj\Debug\PC2M.frmMenu.resources
-C:\Users\konsultera\Desktop\vvmc_dll\PC2M - General\PC2M\obj\Debug\PC2M.Resources.resources
-C:\Users\konsultera\Desktop\vvmc_dll\PC2M - General\PC2M\obj\Debug\PC2M.vbproj.GenerateResource.cache
-C:\Users\konsultera\Desktop\vvmc_dll\PC2M - General\PC2M\obj\Debug\PC2M.vbproj.CoreCompileInputs.cache
-C:\Users\konsultera\Desktop\vvmc_dll\PC2M - General\PC2M\obj\Debug\PC2M.exe
-C:\Users\konsultera\Desktop\vvmc_dll\PC2M - General\PC2M\obj\Debug\PC2M.xml
-C:\Users\konsultera\Desktop\vvmc_dll\PC2M - General\PC2M\obj\Debug\PC2M.pdb
+E:\sam\balaji\powercraft\dotnet\PC2M -  DLL\PC2M\obj\Debug\PC2M.exe
+E:\sam\balaji\powercraft\dotnet\PC2M -  DLL\PC2M\obj\Debug\PC2M.xml
+E:\sam\balaji\powercraft\dotnet\PC2M -  DLL\PC2M\obj\Debug\PC2M.pdb
+E:\sam\balaji\powercraft\dotnet\PC2M -  DLL\PC2M\bin\Debug\PC2M.exe
+E:\sam\balaji\powercraft\dotnet\PC2M -  DLL\PC2M\bin\Debug\PC2M.pdb
+E:\sam\balaji\powercraft\dotnet\PC2M -  DLL\PC2M\bin\Debug\PC2M.xml
+E:\sam\balaji\powercraft\dotnet\PC2M -  DLL\PC2M\bin\Debug\PC2M_DLL.dll
+E:\sam\balaji\powercraft\dotnet\PC2M -  DLL\PC2M\bin\Debug\PC2M_DLL.pdb
+E:\sam\balaji\powercraft\dotnet\PC2M -  DLL\PC2M\bin\Debug\PC2M_DLL.xml
+E:\sam\balaji\powercraft\dotnet\PC2M -  DLL\PC2M\obj\Debug\ResolveAssemblyReference.cache
+E:\sam\balaji\powercraft\dotnet\PC2M -  DLL\PC2M\obj\Debug\PC2M.frmMenu.resources
+E:\sam\balaji\powercraft\dotnet\PC2M -  DLL\PC2M\obj\Debug\PC2M.Resources.resources
+E:\sam\balaji\powercraft\dotnet\PC2M -  DLL\PC2M\obj\Debug\PC2M.vbproj.GenerateResource.Cache
+D:\SAM_30032017\balaji\powercraft\dotnet\PC2M -  DLL\PC2M\obj\Debug\PC2M.exe
+D:\SAM_30032017\balaji\powercraft\dotnet\PC2M -  DLL\PC2M\obj\Debug\PC2M.xml
+D:\SAM_30032017\balaji\powercraft\dotnet\PC2M -  DLL\PC2M\obj\Debug\PC2M.pdb
+F:\DOT NET SOURCE\PC2M 11-10-2017\obj\Debug\PC2M.exe
+F:\DOT NET SOURCE\PC2M 11-10-2017\obj\Debug\PC2M.xml
+F:\DOT NET SOURCE\PC2M 11-10-2017\obj\Debug\PC2M.pdb
+F:\DOT NET SOURCE\PC2M 11-10-2017\bin\Debug\PC2M.exe
+F:\DOT NET SOURCE\PC2M 11-10-2017\bin\Debug\PC2M.pdb
+F:\DOT NET SOURCE\PC2M 11-10-2017\bin\Debug\PC2M.xml
+F:\DOT NET SOURCE\PC2M 11-10-2017\bin\Debug\PC2M_DLL.pdb
+F:\DOT NET SOURCE\PC2M 11-10-2017\bin\Debug\PC2M_DLL.xml
+F:\DOT NET SOURCE\PC2M 11-10-2017\obj\Debug\PC2M.vbprojResolveAssemblyReference.cache
+F:\DOT NET SOURCE\PC2M 11-10-2017\obj\Debug\PC2M.frmMenu.resources
+F:\DOT NET SOURCE\PC2M 11-10-2017\obj\Debug\PC2M.Resources.resources
+F:\DOT NET SOURCE\PC2M 11-10-2017\obj\Debug\PC2M.vbproj.GenerateResource.Cache
+F:\DOT NET SOURCE\MODIFIED BY ME\PC2M\PC2M 11-10-2017\obj\Debug\PC2M.exe
+F:\DOT NET SOURCE\MODIFIED BY ME\PC2M\PC2M 11-10-2017\obj\Debug\PC2M.xml
+F:\DOT NET SOURCE\MODIFIED BY ME\PC2M\PC2M 11-10-2017\obj\Debug\PC2M.pdb
+C:\Gaurav_older\Project\PC2M 11-10-2017\bin\Debug\PC2M.exe
+C:\Gaurav_older\Project\PC2M 11-10-2017\bin\Debug\PC2M.pdb
+C:\Gaurav_older\Project\PC2M 11-10-2017\bin\Debug\PC2M.xml
+C:\Gaurav_older\Project\PC2M 11-10-2017\obj\Debug\PC2M.vbprojResolveAssemblyReference.cache
+C:\Gaurav_older\Project\PC2M 11-10-2017\obj\Debug\PC2M.frmMenu.resources
+C:\Gaurav_older\Project\PC2M 11-10-2017\obj\Debug\PC2M.Resources.resources
+C:\Gaurav_older\Project\PC2M 11-10-2017\obj\Debug\PC2M.vbproj.GenerateResource.cache
+C:\Gaurav_older\Project\PC2M 11-10-2017\obj\Debug\PC2M.vbproj.CoreCompileInputs.cache
+C:\Gaurav_older\Project\PC2M 11-10-2017\obj\Debug\PC2M.vbproj.CopyComplete
+C:\Gaurav_older\Project\PC2M 11-10-2017\obj\Debug\PC2M.exe
+C:\Gaurav_older\Project\PC2M 11-10-2017\obj\Debug\PC2M.xml
+C:\Gaurav_older\Project\PC2M 11-10-2017\obj\Debug\PC2M.pdb
+C:\Gaurav_older\Project\PC2M 11-10-2017\bin\Debug\MySql.Data.DLL
+C:\Gaurav_older\Project\PC2M 11-10-2017\obj\Debug\PC2M.frm_Auditing.resources
+D:\Gaurav\Project\PC2M 11-10-2017\bin\Debug\PC2M.exe
+D:\Gaurav\Project\PC2M 11-10-2017\bin\Debug\PC2M.pdb
+D:\Gaurav\Project\PC2M 11-10-2017\bin\Debug\PC2M.xml
+D:\Gaurav\Project\PC2M 11-10-2017\bin\Debug\MySql.Data.dll
+D:\Gaurav\Project\PC2M 11-10-2017\obj\Debug\PC2M.vbprojAssemblyReference.cache
+D:\Gaurav\Project\PC2M 11-10-2017\obj\Debug\PC2M.frmMenu.resources
+D:\Gaurav\Project\PC2M 11-10-2017\obj\Debug\PC2M.frm_Auditing.resources
+D:\Gaurav\Project\PC2M 11-10-2017\obj\Debug\PC2M.Resources.resources
+D:\Gaurav\Project\PC2M 11-10-2017\obj\Debug\PC2M.vbproj.GenerateResource.cache
+D:\Gaurav\Project\PC2M 11-10-2017\obj\Debug\PC2M.vbproj.CoreCompileInputs.cache
+D:\Gaurav\Project\PC2M 11-10-2017\obj\Debug\PC2M.vbproj.CopyComplete
+D:\Gaurav\Project\PC2M 11-10-2017\obj\Debug\PC2M.exe
+D:\Gaurav\Project\PC2M 11-10-2017\obj\Debug\PC2M.xml
+D:\Gaurav\Project\PC2M 11-10-2017\obj\Debug\PC2M.pdb
+D:\Gaurav\Project\PC2M 11-10-2017\obj\Debug\PC2M.frm_CollectCash.resources
+D:\Gaurav\Project\PC2M 11-10-2017\obj\Debug\PC2M.frm_Master.resources
+C:\_Github\KMC\bin\Debug\PC2M.exe
+C:\_Github\KMC\bin\Debug\PC2M.pdb
+C:\_Github\KMC\bin\Debug\PC2M.xml
+C:\_Github\KMC\obj\Debug\PC2M.vbprojResolveAssemblyReference.cache
+C:\_Github\KMC\obj\Debug\PC2M.frmMenu.resources
+C:\_Github\KMC\obj\Debug\PC2M.frm_Auditing.resources
+C:\_Github\KMC\obj\Debug\PC2M.frm_CollectCash.resources
+C:\_Github\KMC\obj\Debug\PC2M.frm_Master.resources
+C:\_Github\KMC\obj\Debug\PC2M.Resources.resources
+C:\_Github\KMC\obj\Debug\PC2M.vbproj.GenerateResource.cache
+C:\_Github\KMC\obj\Debug\PC2M.vbproj.CoreCompileInputs.cache
+C:\_Github\KMC\obj\Debug\PC2M.vbproj.CopyComplete
+C:\_Github\KMC\obj\Debug\PC2M.exe
+C:\_Github\KMC\obj\Debug\PC2M.xml
+C:\_Github\KMC\obj\Debug\PC2M.pdb
